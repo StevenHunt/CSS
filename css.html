@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta http-equiv="content-type" content="text/html; charset=windows-1250">
+	 	<meta http-equiv="refresh" content=""> 
+	 	<meta name="description" content="CSS Notes">
+	 	<meta name="author" content="Steven Hunt"> 
+	   	<meta name="keywords" content="">
+
+		<title> CSS Tutorial </title> 
+       
+        <!-- Last Order --> 
+        <link rel='stylesheet' type='text/css' href='htmlDemo.css'> 
+        
+        <!-- Second Order --> 
+        <style> 
+        /* Internal Style Sheet */ 
+            body {
+                /* Background properties */ 
+                background-color: #d6f5f5; 
+                background-image: url('path/to/file.jpg'); 
+                background-repeat: repeat-x ; /* or repeat-y, or no-repeat */  
+                background-attachment: fixed; 
+                background-position: right-top; 
+                
+                /* shorthand */ 
+                background : color image repeat attachment position; 
+            } 
+            
+        </style>
+        
+        <!------------------------------------ ICONS -----------------------------------------> 
+    
+        <!-- Font Awesome Icons --> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Bootstrap glyphicons --> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <!-- Google Icons --> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+    
+        
+	</head> 
+    <body>
+
+    <h1> CSS - Cascading Style Sheet </h1> 
+
+    <nav>
+        <ul class='navList' style=''>
+            <li><a href='https://www.w3schools.com/css/css_background.asp' target='_blank'>Background </a> </li>
+            <li><a href='https://www.w3schools.com/css/css_border.asp' target="_blank">Borders </a>
+            <li><a href='https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_sides' target="_blank"> Margins </a> </li>
+            <li><a href='https://www.w3schools.com/css/css_dimension.asp' target="_blank"> Height and Width </a></li>
+            <li><a href='https://www.w3schools.com/css/css_outline.asp' target="_blank"> Outlines </a></li> 
+            <li><a href='https://www.w3schools.com/css/css_text.asp' target="_blank"> Text </a></li>
+            <li><a href='https://www.w3schools.com/css/css_font.asp' target="_blank">  Fonts </a></li> 
+            <li><a href='https://www.w3schools.com/icons/default.asp' target="_blank"> Icons </a> </li>
+            <li><a href='https://www.w3schools.com/css/css_link.asp' target="_blank">  Links </a></li> 
+            <li><a href='https://www.w3schools.com/css/css_table.asp' target="_blank"> Tables </a></li> 
+            <li><a href='https://www.w3schools.com/css/css_display_visibility.asp' target="_blank">  Display </a></li>
+        </ul>
+    </nav>
+
+    <br> 
+
+    <h5> Element selector: </h5>    
+    <p> Testing &lt;p> in open body. </p>
+
+    <div id='foobar'> 
+        <p> Testing &lt;p> inside id=foobar. </p>
+        <h3> Testing &lt;h3> inside id=foobar.  </h3>
+        </div>
+
+    <div class='cBlue'> 
+        <h3> Testing &lt;h3> inside of .cBlue class. </h3>
+        </div>    
+
+    <!-- Inline : Has the highest order -->     
+    <a href='http://www.google.com' style='color:#99004d'> Inline style (Link to Google)  </a> 
+
+    <br> 
+    <br> 
+    
+    <!------------------------------ Borders ----------------------------> 
+    <h3> Borders : </h3>
+    <div id='border1'> 
+        <p> This is a &lt;p> inside border1</p>
+    </div>
+    <br> 
+    <p class='border2'> Rounded Borders </p>
+        
+    <br> 
+    <br> 
+    
+    <!------------------------------ Margins ---------------------------->
+    <h3> Margins : </h3>
+    <div class='marginClass'> 
+        <p>This is &lt;p> in the marginClass, inside an external CSS file. All margins set to different levels.  <br> <br> 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id turpis vitae nibh blandit egestas eu eu eros. Vivamus erat velit, laoreet quis sem vitae, sollicitudin maximus purus. Maecenas id augue ac felis hendrerit aliquet sed sagittis tortor. Integer nec urna pharetra, tincidunt purus pharetra, pulvinar elit. Nulla vestibulum dignissim aliquam. Cras sit amet tortor iaculis, molestie eros sed, elementum risus. Cras feugiat dapibus magna, quis iaculis erat consectetur sit amet. Nullam quis interdum mi. Mauris ullamcorper rutrum orci et tempus. Duis turpis nibh, sagittis id dictum ut, blandit a nisl. Fusce non diam eget arcu tempor dictum non pulvinar urna. Aenean volutpat id justo et interdum. In non pretium neque, rutrum molestie lectus. Nam libero ligula, condimentum at lorem a, commodo ultricies orci.
+        </p>
+        </div>  
+        
+    <!------------------------------ Padding ---------------------------->
+    <h3> Padding : </h3>
+    <div id='padding'> 
+        <p> Example of padding.<br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id turpis vitae nibh blandit egestas eu eu eros. Vivamus erat velit, laoreet quis sem vitae, sollicitudin maximus purus. Maecenas id augue ac felis hendrerit aliquet sed sagittis tortor. Integer nec urna pharetra, tincidunt purus pharetra, pulvinar elit. Nulla vestibulum dignissim aliquam. Cras sit amet tortor iaculis, molestie eros sed, elementum risus. Cras feugiat dapibus magna, quis iaculis erat consectetur sit amet. Nullam quis interdum mi. Mauris ullamcorper rutrum orci et tempus. Duis turpis nibh, sagittis id dictum ut, blandit a nisl. Fusce non diam eget arcu tempor dictum non pulvinar urna. Aenean volutpat id justo et interdum. In non pretium neque, rutrum molestie lectus. Nam libero ligula, condimentum at lorem a, commodo ultricies orci.
+        </p>
+        </div>
+     <br>    
+    <!------------------------------ Height and Width of Elements ---------------------------->
+    
+    <h3> Height and Width : </h3>
+    <h5 class='hw'>  This is adjusting the height and width of an &lt;h5> element. <br> 
+    A scrollbar is added when the browser is shrunken past the width specified. </h5>
+        
+    <h5 class='hwMax'> This is created with width-max, which adjusts itself to the browsers width. </h5>
+    
+    <br>    
+    <!------------------------------ Outlines --------------------------->
+    
+    <!-- Is on the outside of the border -->     
+    <h3> Outlines : </h3>
+    <div class='outlineClass'> 
+        <p style='text-align:center;'> This is in a div .outlineClass </p> <br> 
+        <span id='foobar'>In foobar : The red is an outline with the style set to double and the color set to red. </span>
+        </div> 
+    
+    <br> 
+    <!------------------------------ Text --------------------------->
+    
+     <h1 style='text-shadow: 3px 2px red; '> Text : </h1>
+    
+        <p style='color:blue; text-decoration: underline; text-transform: capitalize; letter-spacing: 4px; '> text-decoration: underline;  text-transform: capitalize; letter-spacing: 4px;  </p>
+        
+        <p style='text-decoration: overline; text-transform: uppercase; word-spacing:10px; '> text-decoration: overline, text-transform: uppercase, word-spacing </p>
+        
+        <p class='textClass'><b>Example of Justify & Indent : </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id turpis vitae nibh blandit egestas eu eu eros. Vivamus erat velit, laoreet quis sem vitae, sollicitudin maximus purus. Maecenas id augue ac felis hendrerit aliquet sed sagittis tortor. Integer nec urna pharetra, tincidunt purus pharetra, pulvinar elit. Nulla vestibulum dignissim aliquam. Cras sit amet tortor iaculis, molestie eros sed, elementum risus. Cras feugiat dapibus magna, quis iaculis erat consectetur sit amet. Nullam quis interdum mi. Mauris ullamcorper rutrum orci et tempus. Duis turpis nibh, sagittis id dictum ut, blandit a nisl. Fusce non diam eget arcu tempor dictum non pulvinar urna. Aenean volutpat id justo et interdum. In non pretium neque, rutrum molestie lectus. Nam libero ligula, condimentum at lorem a, commodo ultricies orci.</p>
+    
+     <br> 
+    <!------------------------------ Font --------------------------->
+         
+     <h3 style='font-family: Arial Black, Gadget, sans-serif;'> Fonts : </h3>
+        
+        <p id='font1'> This is font1 : Courier, normal, 30px.  </p>
+        
+        <p id='font2'> This is font2 : Times New Roman, italic, 60px, bold.   </p>
+        
+        <p id='font3'> This is font3 : Ariel, 2.5em (40px/16=2.5em), Small Caps.  </p>
+        
+        <br> 
+        
+        <a href='https://www.w3schools.com/cssref/css_websafe_fonts.asp' target="_blank"> List of all web safe fonts. </a>
+        
+     <br> 
+     <br> 
+        
+    <!------------------------------ Icons --------------------------->
+        
+        <!-- CSS files must be added into the head section in order to use these icons : --> 
+        
+        <h3> Icons : </h3>
+        
+        <div class='icons'>
+        <p> Font Awesome: </p>
+        <i class='fa fa-cloud'> </i>
+        <i class='fa fa-car'> </i>
+        <i class='fa fa-heart'> </i>
+        <i class='fa fa-file'> </i>
+        <i class='fa fa-bars'> </i>
+         </div>
+        <br> 
+        <br> 
+        
+        <div class='icons'> 
+        <p> Bootstrap Glyphicons: </p>
+        <i class="glyphicon glyphicon-cloud"></i>
+        <i class="glyphicon glyphicon-remove"></i>
+        <i class="glyphicon glyphicon-user"></i>
+        <i class="glyphicon glyphicon-envelope"></i>
+        <i class="glyphicon glyphicon-thumbs-up"></i>
+        </div>
+        <br> 
+        <br> 
+        
+        <div class='icons'> 
+        <p> Google Icons: </p>
+        <i class="material-icons">cloud</i>
+        <i class="material-icons">favorite</i>
+        <i class="material-icons">attachment</i>
+        <i class="material-icons">computer</i>
+        <i class="material-icons">traffic</i>
+        </div>
+        
+        <br> 
+        <br> 
+        
+        <!------------------------------ Links --------------------------->
+        
+        <h3> Links : </h3>
+        
+        <p> The links inside the nav element at the top of the page have changed. </p>
+        
+        <div class='link1'> 
+        
+        <a href='www.google.com' style='font-size:20px; font-weight:bold; letter-spacing:2px;'> To Google</a>
+        
+        </div>
+        
+        <br> 
+        <br> 
+        
+        <!------------------------------ Tables --------------------------->
+        
+        <h3> Tables : </h3>
+
+        <table id="stations">
+          <tr>
+            <th>City</th>
+            <th>Station</th>
+            <th>Genre</th>
+          </tr>
+          <tr>
+            <td>San Jose, CA</td>
+            <td>95.3</td>
+            <td>Country</td>
+          </tr>
+          <tr>
+            <td>St. Louis, MO</td>
+            <td>104.1</td>
+            <td>Todays Hits</td>
+          </tr>
+          <tr>
+            <td>Seattle, WA</td>
+            <td>89.5</td>
+            <td>Dance / EDM</td>
+          </tr>
+          <tr>
+            <td>Boulder, CO</td>
+            <td>99.9</td>
+            <td>Public Radio </td>
+          </tr>
+          <tr>
+            <td>Santa Cruz, CA</td>
+            <td>104.3</td>
+            <td>Classic Rock</td>
+          </tr>
+        </table>
+
+        <br> 
+        <br> 
+
+       <!------------------------------ Display --------------------------->
+
+        <h3> Display :</h3>
+        
+        <br> 
+        <h4> 1. Hidden : </h4>
+        <h1> Large heading (Not hidden) </h1>
+        <h1 class='vis'> Large heading (Visibility:hidden) </h1> <!-- Using this method takes up space in the webpage --> 
+        <h1 class='hidden'> Large heading (Display:none) </h1>
+        <h1> Large heading </h1>
+        
+        
+       <!------------------------------ Navigation Bar --------------------------->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </body>
+</html>

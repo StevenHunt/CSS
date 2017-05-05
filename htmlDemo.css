@@ -1,0 +1,279 @@
+/* 
+
+Author: Steven Hunt
+Date: 2016
+
+Filename : htmlDemo.css
+HTML DOC : css.html
+*/
+
+/* Elements : Most HTML elements */ 
+
+/* If I were to uncomment... 
+p {
+    TRUMPS ALL OTHER P PROPERTIES LISTED BELOW, EXCEPT INSTYLE IN THE HTML DOC. 
+}
+*/ 
+
+/* Id : Select 1 unique element */
+#foobar {
+    color: green; 
+    text-align: right;
+    background-color: white; 
+}
+
+/* Class : Elements with a specific class attribute */
+.cBlue {
+    color: blue; 
+    text-align: center; 
+}
+
+/* Class : Specific elements only */
+p.lGray {
+    color: darkslategray; 
+    text-align: left;
+    border-style: solid;    
+}
+
+/* ------------------------------ BORDER ------------------------------ */ 
+#border1 {
+    border-style: dashed; 
+    border-width: 6px; 
+    border-color: crimson; 
+    border-bottom: 2px solid #99cc00;  
+
+    /* Shorthand */ 
+    border : width style color;
+    
+    text-align: center;
+}
+
+p.border2 {
+    border-color: black;
+    border-radius:10px; 
+    border-style: double; 
+}
+/* ------------------------------ MARGINS ------------------------------ */ 
+
+div.marginClass {
+    border: 3px solid black; 
+    background-color: white; 
+
+    
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 300px; 
+    margin-bottom: 100px;
+    margin: ; /* auto */ 
+    
+    /* shorthand */ 
+    margin: top right bottom left; 
+}
+/* ------------------------------ PADDING ------------------------------ */ 
+
+#padding {
+    border: 2px solid lightblue;
+    background-color: black; 
+    color: white; 
+    text-align: center; 
+    
+    padding-left: 40px; 
+    padding-right: 200px; 
+    padding-top: 100px; 
+    padding-bottom: 5px;
+    
+    /*shorthand*/
+    padding: top right bottom left; 
+}
+
+/* ------------------------------ HEIGHT & WIDTH ------------------------------ */ 
+
+h5.hw {
+    height: 60px; 
+    width: 500px; 
+    
+    background-color: powderblue; 
+    border: 2px solid black; 
+}
+
+h5.hwMax {
+    border: 2px solid black; 
+    background-color: powderblue;
+    
+    max-width: 1000px; /* Adjusts to screen size */ 
+    max-height: ; 
+    min-height: ; 
+    min-width: ; 
+}
+
+/* ------------------------------- OUTLINE ------------------------------ */ 
+
+div.outlineClass {
+    border: 1px solid black;
+    
+    outline-width: 5px; 
+    outline-style:double; 
+    outline-color: red;
+    
+    outline-offset: 3px; /* Offset from border of the element */ 
+    
+    /*shorthand*/
+    outline: width style color; 
+}
+
+/* ------------------------------- TEXT ------------------------------ */ 
+
+.textClass {
+    border: 1px solid black; 
+    padding: 10px;  
+    width: 300px; 
+    text-align: justify; 
+    text-indent: 30px; 
+}
+
+/* ------------------------------- FONTS ------------------------------ */ 
+
+body {
+    font-size: 100%; 
+}
+#font1 {
+    font-family: "Courier New"; 
+    font-style: normal; 
+    font-size: 30px; 
+}
+
+#font2 {
+    font-family: "Times New Roman"; 
+    font-style: italic;
+    font-size: 60px; 
+    font-weight: bold; 
+
+}
+
+#font3 {
+    font-family: "Arial"; 
+    font-size: 2.5em; 
+    font-weight: normal; 
+    font-variant: small-caps; 
+}
+
+/* ------------------------------- ICONS ------------------------------ */ 
+
+.icons {
+    border: 1px solid black; 
+    background-color: azure;
+    padding: 10px; 
+}
+
+/* ------------------------------- LINKS ------------------------------ */ 
+
+.link1 a:link, a:visited {
+    background-color: white;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid black; 
+}
+
+.link1 a:hover, a:active {
+    background-color: red;
+}
+nav a:hover {
+    color:red; 
+    font-family: monospace; 
+    text-decoration: underline; 
+}
+
+nav a:visited {
+    font-size: 25px; 
+    background-color: black; 
+}
+
+nav a:active {
+    font-weight: bold; 
+}
+
+/* ------------------------------- TABLES ------------------------------ */ 
+
+
+#stations {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#stations td, #stations th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#stations tr:nth-child(even){background-color: #f2f2f2;}
+
+#stations tr:hover {background-color: #ddd;}
+
+#stations th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/* ------------------------------- DISPLAY ------------------------------ */ 
+
+
+ul.disClass {
+    display: inline; 
+}
+
+h1.hidden {
+    display: none; 
+}
+
+h1.vis {
+    visibility: hidden; 
+}
+
+/* ----------------------------- NAVIGATION BAR --------------------------- */
+
+ul.navList {
+    list-style-type: none; 
+    margin:0; 
+    padding:0; 
+    width:200px; 
+    background-color: #679898;
+    border: 1px solid black; 
+}
+
+li a {
+    display:block; 
+    color: ##d1e0e0; 
+    padding: 8px 16px; 
+    text-decoration: none; 
+    border: 1px solid black; 
+}
+
+li a:hover {
+    background-color: #d1e0e0; 
+    color:black; 
+    font-weight:bold; 
+    text-decoration: none;
+}
+
+li a:active {
+    background-color:#d1e0e0; 
+}
+
+
+
+
+
+
+
+
+
+
+
