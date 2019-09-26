@@ -1,7 +1,3 @@
 # CSS
-Cascading Style Sheet - Markup Language 
 
-File Extension: .css 
-
-External style sheet, internal style, and inline style. 
- 
+Going through HTML 5 Tutorial via W3 Schools: https://www.w3schools.com/css/default.asp
